@@ -676,7 +676,7 @@ sup {
 
 .burger__icon {
     height: 0.2rem;
-    width: 1.6rem;
+    width: 1.8rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -691,6 +691,7 @@ sup {
 
 .burger__icon:before,
 .burger__icon:after {
+    height: 0.3rem!important;
     content: "";
     position: absolute;
     height: inherit;
@@ -704,7 +705,7 @@ sup {
 }
 
 .burger__icon:before {
-    top: -0.5rem;
+    top: -0.7rem;
     left: 0;
     -webkit-transform-origin: left;
     -ms-transform-origin: left;
@@ -712,7 +713,7 @@ sup {
 }
 
 .burger__icon:after {
-    bottom: -0.5rem;
+    bottom: -0.7rem;
     right: 0;
     -webkit-transform-origin: right;
     -ms-transform-origin: right;
@@ -855,7 +856,9 @@ sup {
     font-weight: 400;
     border: none;
     border-radius: 21px;
-  
+}
+.search-form__input.active {
+    background-color: #fff;
 }
 .search-form__input :focus {
     background-color: #ffffff;
@@ -885,10 +888,10 @@ sup {
     position: absolute;
     top: 0;
     right: 0;
-    width: 44px;
+    width: 4.2rem;
     padding: 0 13px;
     height: 4.2rem;
-    background-color: #eef0f1;
+    background-color: transparent;
     color: #3d4f5d;
     font-size: 1.7rem;
     border: none;
@@ -2684,7 +2687,12 @@ sup {
 .filter-remove__inline {
     margin: 0;
 }
-
+.map-logo {
+    max-height: 20px;
+}
+.ymaps-2-1-77-balloon__close-button {
+    height: 46px!important;
+}
 @media screen and (max-width: 767px) {
     .filter-remove__inline {
         margin: 0.5rem 0 0 0;
@@ -6341,7 +6349,9 @@ sup {
     position: relative;
     margin-bottom: 2rem;
 }
-
+.map-block_main {
+    margin-top: 25px;
+}
 .map-block .map-sidebar {
     position: absolute;
     left: 0.6rem;
@@ -6635,11 +6645,6 @@ sup {
     position: relative;
 }
 
-@media screen and (max-width: 991px) {
-    .map-size .icon {
-        margin: 0;
-    }
-}
 
 
 #map {
@@ -10550,10 +10555,6 @@ html.overflow-hidden body {
         padding-right: 1.5rem;
     }
 
-    .b-box .map-block {
-        margin-left: -1.5rem;
-        margin-right: -1.5rem;
-    }
 
     .map-sidebar {
         display: none;
@@ -11311,6 +11312,7 @@ html {
         border-bottom: 0.1rem solid #e6ecf2;
         margin-bottom: 0;
         padding-top: 1.5rem;
+        margin-top: -1px;
         /* padding-bottom: 2rem; */
     }
 
@@ -11402,6 +11404,13 @@ html {
     .ct-footer h3 {
         font-size: 1.6rem;
     }
+    .sorting {
+        padding-left: 15px!important;
+        margin-left: -15px!important;
+    }
+    .rs-wrap h1 {
+        margin-bottom: 15px;
+    }
 }
 
 .catalog-list {
@@ -11483,6 +11492,7 @@ html {
 
     .catalog-item.catalog-item_six:nth-child(5n) {
         margin: 0 0 2.5rem 0;
+        width: calc((100% - 4 * 2.5rem) / 5);
     }
 }
 
@@ -11527,6 +11537,7 @@ html {
 
     .catalog-item.catalog-item_six:nth-child(5n) {
         margin: 0 1rem 2.5rem 0;
+        width: calc((100% - 3 * 1rem) / 4);
     }
 
     .catalog-item.catalog-item_six:nth-child(4n) {
@@ -11558,6 +11569,9 @@ html {
 
     .catalog-item.catalog-item_six:nth-child(3n) {
         margin: 0 0 2.5rem 0;
+    }
+    .catalog-item.catalog-item_six:nth-child(5n) {
+        width: calc((100% - 2 * 1rem) / 3);
     }
 }
 
@@ -11598,6 +11612,7 @@ html {
 
     .catalog-item.catalog-item_six:nth-child(5n) {
         margin: 0;
+        width: 50%;
     }
 
     .catalog-item.catalog-item_six:nth-child(3n) {
@@ -12209,6 +12224,10 @@ html {
         max-width: none;
         min-width: auto;
     }
+    .map-block_main {
+        margin-top: 15px;
+    }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -12449,7 +12468,7 @@ html {
     color: #222222;
     font-family: Montserrat;
     font: 400 14px/36px "Montserrat", Arial, sans-serif;
-    padding: 2px 15px;
+    padding: 2px 35px 2px 15px;
     cursor: pointer;
     position: relative;
   }
@@ -12501,13 +12520,14 @@ html {
   
   .rubricator__lv1_item img {
     margin-right: 9px;
-    width: 5px;
+    width: 10px;
     height: 100%;
     object-fit: contain;
+    transform: scale(-1,1);
   }
   
   .rubricator__lv2 {
-    padding-left: 15px;
+    padding-left: 19px;
     display: none;
   }
   
@@ -12518,11 +12538,10 @@ html {
     width: fit-content;
   }
   
-  .rubricator__lv2_link:hover {
+  .rubricator__lv2_link.active {
     border-radius: 2px;
     background-color: #f5f7fa;
     padding: 6px 8px;
-    text-decoration: none;
   }
   
   .mb-2 {
@@ -12586,17 +12605,18 @@ html {
     height: 34px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.02);
     border-radius: 6px;
-    background: #f5f7fa url("../img/arrow-left-purple.png") no-repeat center/10px 16px;
+    background: #f5f7fa url("../img/arrow-left-purple.svg") no-repeat center/12px 16px;
     position: absolute;
     left: calc(37rem + 5px);
     top: 5px;
     z-index: 9;
     border: none;
     transition: all 0.3s ease;
+    transform: scale(-1, 1);
   }
   
   .btn-arrow.active {
-    transform: scale(-1, 1);
+    transform: scale(1, 1);
     left: 5px;
   }
   
@@ -12613,19 +12633,17 @@ html {
     width: calc(100% - 20rem);
     margin-right: 3rem;
   }
-  
+  .map-block__category .map-sidebar.is-open {
+      height: fit-content;
+  }
   .map-block__category #map {
     height: 17rem;
   }
-  
+
   .map-block__category .ymaps-2-1-77-zoom {
     display: none;
   }
-  
-  .map-block .map-sidebar.is-open, .map-block__category .map-filter {
-    min-height: 38rem;
-  }
-  
+
   @media screen and (max-width: 991px) {
     .select-sorting__dropdown {
       left: -15px;
@@ -12666,7 +12684,21 @@ html {
     .select .select-dropdown .select-list__item {
         margin-bottom: 0;
     }
+    .category-main {
+        margin-top: 0;
+    }
+    .map-block__category {
+        margin-top: 30px;
+    }
+    .map-block__category #map {
+        height: 12rem;
+    }
   }
 
-
-  
+@media screen and (max-width: 1024px) {
+    .select-sorting__dropdown {
+        left: -15px;
+        transform: none;
+        width: max-content;
+    }
+}

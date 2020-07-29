@@ -41,7 +41,14 @@
                 <div class="header__bottom-wrap">
                     <!-- header menu-catalog -->
                  
-
+                    <div class="city dropdown">
+                        <a href="#" class="city__link dropdown-link"><span>Москва</span></a>
+                        <ul class="dropdown-menu">
+                            <li class="is-active"><a href="#">Москва</a></li>
+                            <li><a href="#">Санкт-Петербург</a></li>
+                            <li><a href="#">Минск</a></li>
+                        </ul>
+                    </div>
                     <!-- header top menu -->
                     <ul class="top-menu">
                         <li class="top-menu__item">
@@ -52,6 +59,9 @@
                         </li>
                         <li class="top-menu__item">
                             <a href="" class="top-menu__link">Добавить магазин</a>
+                        </li>
+                        <li class="top-menu__item">
+                            <a href="" class="top-menu__link">Личный кабинет</a>
                         </li>
                     </ul> <!-- /header top menu -->
 
@@ -82,7 +92,7 @@
                         <form action="#" class="search-form">
                             <input type="text" placeholder="Поиск..." class="search-form__input">
                             <button type="submit" class="search-form__button ">
-                                <img src="img/search.png" alt="search icon" class="icon-search">
+                                <span class="icon-search"></span>
                             </button>
                         </form>
                     </div> <!-- /header search -->
@@ -116,7 +126,7 @@
                         <a href="#" class="basket__wrapper">
                             <span class="badge">22</span>
                             <span class="basket__icon">
-                                <img src="img/shopping-cart.png" alt="icon shopping" class="icon">
+                                <span class="icon icon-shopping-cart-9"></span>
                             </span>
                             <span class="basket__price">0.00 <span class="rub">a</span></span>
                         </a>
