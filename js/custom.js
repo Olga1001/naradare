@@ -3,6 +3,21 @@ $(window).on('load', function () {
 });
 
 $(function () {  
+    // radio/checkbox in map sidebar
+    $(".radio").on('click', function() {
+        $(this).find("input").attr("checked", true);
+    });
+    $(".checkbox").on('click', function() {
+        let $checkbox = $(this).find("input");
+        $(this).find(".checkbox__figure").toggleClass('active');
+        if($checkbox.is(":checked")) {  
+            $checkbox.removeAttr("checked");
+           
+        } else {
+            $checkbox.attr("checked", true);
+        }
+    });
+    
     // hide filter popup
     $(".btn-arrow").on('click', function() {
         $(this).toggleClass('active');

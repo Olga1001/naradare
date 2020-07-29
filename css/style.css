@@ -8891,10 +8891,9 @@ label {
 .radio:hover .radio__figure {
     border-color: #cbccce;
 }
-
-.checkbox input:checked ~ .checkbox__figure:after {
+.checkbox__figure:after {
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     z-index: 1;
     left: 0.3rem;
@@ -8907,6 +8906,12 @@ label {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+.checkbox__figure.active:after {
+    display: block;
+}
+.checkbox input:checked ~ .checkbox__figure:after {
+    display: block;
+}
 
 .radio {
     line-height: 2rem;
@@ -8915,10 +8920,9 @@ label {
 .radio input:checked ~ .radio__figure {
     border-color: #48cd92;
 }
-
-.radio input:checked ~ .radio__figure:after {
-    content: "";
-    display: block;
+.radio__figure:before {
+    content: '';
+    display: none;
     position: absolute;
     z-index: 1;
     left: 0.4rem;
@@ -8927,6 +8931,9 @@ label {
     width: 0.64rem;
     border-radius: 50%;
     background: #48cd92;
+}
+.radio input:checked ~ .radio__figure:before {
+    display: block;
 }
 
 .radio__figure {
@@ -10590,7 +10597,7 @@ html.overflow-hidden body {
     }
 
     #map {
-        height: 17rem;
+        height: 12rem;
     }
 
     .get-block__link,
@@ -12156,6 +12163,7 @@ html {
 }
 .popup__body .map-block .map-sidebar {
     transition: all 0.3s ease;
+    overflow-y: auto;
 }
 .popup__body .map-block .map-sidebar.slideLeft {
     transform: translateX(-100%);
@@ -12614,7 +12622,7 @@ html {
     display: none;
   }
   
-  .map-block .map-sidebar.is-open {
+  .map-block .map-sidebar.is-open, .map-block__category .map-filter {
     min-height: 38rem;
   }
   
@@ -12635,7 +12643,6 @@ html {
       width: calc(100% + 3rem);
       margin-right: 0;
       padding: 0 1.5rem;
-      margin-top: -10px;
     }
     
     .btn-arrow {
@@ -12649,6 +12656,15 @@ html {
     }
     .map-block_main {
         margin: 15px 0 10px;
+    }
+    .map-filter.hide-mob {
+        display: none!important;
+    }
+    .select .select-dropdown {
+        position: initial;
+    }
+    .select .select-dropdown .select-list__item {
+        margin-bottom: 0;
     }
   }
 
