@@ -11813,12 +11813,6 @@ html {
     pointer-events: none;
 }
 
-@media screen and (max-width: 1366px) {
-    .product-inner__img-overlay {
-        max-width: 25rem;
-    }
-}
-
 .sticker-list {
     display: flex;
     justify-content: flex-start;
@@ -12701,4 +12695,40 @@ html {
         transform: none;
         width: max-content;
     }
+    .filter-buttons .btn {
+        width: 12rem;
+    }
+    .rubricator__lv1_item img {
+        margin-left: 6px;
+    }
+    .rubricator__lv2 {
+        padding-left: 17px;
+    }
+}
+
+.ymaps-2-1-77-balloon__close-button {
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+    background: #8f89c6!important;
+    position: relative;
+    opacity: 1!important;
+    width: 36px!important;
+    height: 36px!important;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.ymaps-2-1-77-balloon__close-button:before, .ymaps-2-1-77-balloon__close-button:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #fff;
+    width: 21px;
+    height: 2px;
+}
+.ymaps-2-1-77-balloon__close-button:after {
+    width: 2px;
+    height: 21px;
 }

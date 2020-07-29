@@ -160,7 +160,6 @@ $(function () {
         $('.navbar').removeClass("is-open");
         $('.header').removeClass("index");
         $('.overlay').removeClass("is-open");
-
     });
 
     $(".overlay").on('click', function () {
