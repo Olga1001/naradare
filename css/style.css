@@ -12725,7 +12725,7 @@ html {
     opacity: 1!important;
     width: 26px!important;
     height: 26px!important;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-right: 5px;
 }
 .ymaps-2-1-77-balloon__close-button:before, .ymaps-2-1-77-balloon__close-button:after {
@@ -12741,4 +12741,10 @@ html {
 .ymaps-2-1-77-balloon__close-button:after {
     width: 2px;
     height: 16px;
+}
+
+@media screen and (max-width: 575px) {
+    .catalog-item.catalog-item_six:nth-child(5n) {
+        width: 50%;
+    }
 }
