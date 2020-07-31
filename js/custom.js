@@ -56,7 +56,8 @@ $(function () {
         $(".popup__body .map-block .map-sidebar").toggleClass('slideLeft');
     });
 
-    $(".filter-remove").on('click', function() {
+    $(".filter-remove").on('click', function(e) {
+        e.preventDefault();
         $(".map-sidebar").toggleClass('active');
      });
      // rubricator accordion
@@ -739,28 +740,28 @@ $(function () {
     }
 
     // Sticky header
-    if ($(".header").length > 0 && $(".filter-anchors").length > 0) {
-        let headerTopOffset = $(".header").offset().top;
-        let anchorsTopOffset = $(".filter-anchors").offset().top;
-        if ($(window).width() > 767) {
-            $(window).scroll(function () {
-                // For header
-                if ($(this).scrollTop() >= headerTopOffset + 400) {
-                    $(".header").addClass("fixed");
-                } else {
-                    $(".header").removeClass("fixed");
-                }
+    // if ($(".header").length > 0 && $(".filter-anchors").length > 0) {
+    //     let headerTopOffset = $(".header").offset().top;
+    //     let anchorsTopOffset = $(".filter-anchors").offset().top;
+    //     if ($(window).width() > 767) {
+    //         $(window).scroll(function () {
+    //             // For header
+    //             if ($(this).scrollTop() >= headerTopOffset + 400) {
+    //                 $(".header").addClass("fixed");
+    //             } else {
+    //                 $(".header").removeClass("fixed");
+    //             }
 
-                // For sidebar anchors
-                if ($(this).scrollTop() > anchorsTopOffset - 500) {
-                    $(".filter-anchors").addClass("fixed");
-                } else {
-                    $(".filter-anchors").removeClass("fixed");
-                }
-            });
-        }
-        ;
-    }
+    //             // For sidebar anchors
+    //             if ($(this).scrollTop() > anchorsTopOffset - 500) {
+    //                 $(".filter-anchors").addClass("fixed");
+    //             } else {
+    //                 $(".filter-anchors").removeClass("fixed");
+    //             }
+    //         });
+    //     }
+    //     ;
+    // }
 
     $('.top-banner__close').click(function () {
         $(this).parent().slideUp();

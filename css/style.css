@@ -1635,6 +1635,7 @@ sup {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding-bottom: 3rem;
+    margin-top: 10px;
 }
 
 .main-wrap {
@@ -3087,6 +3088,9 @@ sup {
     .rating-block_info {
         max-width: 50rem;
         margin: 0 auto 2.5rem;
+    }
+    .filter-buttons .btn {
+        width: 11.6rem;
     }
 }
 
@@ -9616,7 +9620,9 @@ html.overflow-hidden body {
 .popup-card__slider .slick-slide {
     font-size: 0;
 }
-
+.map-block_main {
+    margin-top: 15px;
+}
 @media screen and (max-width: 1259px) {
     .popup-card__item_slider {
         width: calc(100% - 37rem - 2rem);
@@ -10000,6 +10006,10 @@ html.overflow-hidden body {
     }
 
     /* Cart */
+
+    .map-block_main {
+        margin-top: 5px;
+    }
 }
 
 @media screen and (min-width: 1260px) {
@@ -10556,11 +10566,6 @@ html.overflow-hidden body {
         margin-right: -1.5rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-    }
-
-    .b-box .map-block {
-        margin-left: -1.5rem;
-        margin-right: -1.5rem;
     }
 
     .map-sidebar {
@@ -11443,7 +11448,10 @@ html {
     max-width: 25rem;
     background: #fff;
 }
-
+.catalog-item_border {
+    width: calc((100% - 3 * 1.2rem) / 4);
+    margin: 0 1.2rem 1rem 0;
+}
 .catalog-item:nth-child(4n) {
     margin: 0 0 1rem 0;
 }
@@ -11818,12 +11826,6 @@ html {
     top: 0;
     z-index: 5;
     pointer-events: none;
-}
-
-@media screen and (max-width: 1366px) {
-    .product-inner__img-overlay {
-        max-width: 25rem;
-    }
 }
 
 .sticker-list {
@@ -12231,6 +12233,11 @@ html {
         max-width: none;
         min-width: auto;
     }
+    .select-sorting__dropdown {
+        left: -15px;
+        transform: none;
+        width: max-content;
+      }
 }
 
 @media screen and (max-width: 991px) {
@@ -12300,7 +12307,7 @@ html {
     }
     .search-form__button {
         height: 3rem;
-        width: 44px;
+        width: 36px;
     }
     .city__link {
         color: #0053b9;
@@ -12497,6 +12504,13 @@ html {
     text-decoration: underline;
   }
   
+@media screen and (max-width: 1024px) {
+    .select-sorting__dropdown {
+        left: -15px;
+        transform: none;
+        width: max-content;
+      }
+}
   .ml-auto {
     margin-left: auto;
   }
@@ -12688,7 +12702,7 @@ html {
         display: none;
     }
     .map-block_main {
-        margin: 15px 0 10px;
+        margin: 5px 0 10px;
     }
     .map-filter.hide-mob {
         display: none!important;
