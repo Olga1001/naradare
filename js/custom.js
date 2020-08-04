@@ -3,6 +3,15 @@ $(window).on('load', function () {
 });
 
 $(function () {  
+
+    $(".card-center__link").on('click', function (e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 1000, 'linear');
+    });
+
     if (window.matchMedia("(max-width: 575px)").matches) {
         $(".footer__form_input").attr("placeholder", "E-mail");
     }
@@ -22,8 +31,9 @@ $(function () {
         $(this).addClass('active').parent().siblings().find(".rubricator__lv2_link").removeClass('active');
     });
 
-    // search in header
+    
     if (window.matchMedia("(min-width: 767px)").matches) {
+        // search in header
         $(".search-form__input").on('focus', function() {
             $(this).addClass('active').removeAttr("placeholder");
         });
@@ -32,11 +42,18 @@ $(function () {
         });
       } 
       if (window.matchMedia("(max-width: 767px)").matches) {
+          // search in header
+        $(".search-form__input").on('focus', function() {
+            $(this).removeAttr("placeholder");
+        });
+        $(".search-form__input").on('blur', function() {
+            $(this).attr("placeholder", "Поиск...");
+        });
         // radio/checkbox in map sidebar
-        $(".radio").on('click', function() {
+        $(".map-sidebar .radio").on('click', function() {
             $(this).find("input").attr("checked", true);
         });
-        $(".checkbox").on('click', function() {
+        $(".map-sidebar .checkbox").on('click', function() {
             let $checkbox = $(this).find("input");
             $(this).find(".checkbox__figure").toggleClass('active');
             
