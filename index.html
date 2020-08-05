@@ -76,7 +76,9 @@
                     <div class="d-flex align-items-center mr-auto">
                         <a href="#" class="catalog-menu toggle-menu mr-4">
                             <div class="burger">
-                                <div class="burger__icon"></div>
+                                <div class="burger__icon">
+                                    <div class="burger__icon_center"></div>
+                                </div>
                             </div>
                         </a> <!-- /header menu-catalog -->
     
@@ -177,7 +179,7 @@
             <span class="navbar__close"><span class="icon icon-close"></span> Закрыть</span>
             <ul class="navbar-menu">
                 <li class="is-dropdown">
-                    <a href="#">Напольные покрытия</a>
+                    <a href="#" class="is-dropdown_lv1">Напольные покрытия</a>
                     <div class="navbar-menu-dropdown navbar-menu-lvl-2">
                         <ul>
                             <li>
@@ -246,7 +248,7 @@
                     </div>
                 </li>
                 <li class="is-dropdown">
-                    <a href="#">Обои</a>
+                    <a href="#" class="is-dropdown_lv1">Обои</a>
                     <div class="navbar-menu-dropdown navbar-menu-lvl-2">
                         <ul>
 
@@ -257,7 +259,7 @@
                     </div>
                 </li>
                 <li class="is-dropdown">
-                    <a href="#">Двери</a>
+                    <a href="#" class="is-dropdown_lv1">Двери</a>
                     <div class="navbar-menu-dropdown navbar-menu-lvl-2">
                         <ul>
                             <li>
@@ -293,7 +295,7 @@
                     </div>
                 </li>
                 <li class="is-dropdown">
-                    <a href="#">Плитка</a>
+                    <a href="#" class="is-dropdown_lv1">Плитка</a>
                     <div class="navbar-menu-dropdown navbar-menu-lvl-2">
                         <ul>
 
@@ -981,78 +983,313 @@
                 </div>
 
                 <div class="sec-block">
-                    <div class="sec-block__head">
-                        <h2 class="b-box__title">Каталог товаров</h2>
+                    <div class="row align-items-center sec-block__head">
+                        <div class="col-md-8">
+                            <h2 class="b-box__title">Каталог товаров</h2>
+                        </div>
                     </div>
 
                     <div class="catalog-product">
-                        <div class="catalog-product__col">
-                            <img src="img/pryamougolnik_2.webp" alt="pryamougolnik" class="catalog-product__img">
-                            <p class="catalog-product__title">Напольные покрытия</p>
-                            <button type="button" class="catalog-product__btn">Показать</button>
-                        </div>
-                        <div class="catalog-product__col">
-                            <img src="img/pryamougolnik_3.webp" alt="pryamougolnik" class="catalog-product__img">
-                            <p class="catalog-product__title">Фасадные панели</p>
-                            <button type="button" class="catalog-product__btn">Показать</button>
-                        </div>
-                        <div class="catalog-product__col">
-                            <img src="img/pryamougolnik_1.webp" alt="pryamougolnik" class="catalog-product__img">
-                            <p class="catalog-product__title">Керамическая плитка и керамогранит</p>
-                            <button type="button" class="catalog-product__btn">Показать</button>
-                        </div>
-                        <div class="catalog-product__col filter-block__body">
-                            <ul>
-                                <li class="catalog-product__row fxm">
-                                    <a href="" class="catalog-product__link">Ламинат</a>
-                                    <p class="catalog-product__item">1 240</p>
-                                </li>
-                                <li class="catalog-product__row fxm">
-                                    <a href="" class="catalog-product__link">Линолеум</a>
-                                    <p class="catalog-product__item">430</p>
-                                </li>
-                                <li class="catalog-product__row fxm">
-                                    <a href="" class="catalog-product__link">ПВХ-плитка</a>
-                                    <p class="catalog-product__item">1 540</p>
-                                </li>
-                                <li class="catalog-product__row fxm">
-                                    <a href="" class="catalog-product__link">Паркет</a>
-                                    <p class="catalog-product__item">430</p>
-                                </li>
-                                <li class="catalog-product__row fxm">
-                                    <a href="" class="catalog-product__link">Инженерная доска</a>
-                                    <p class="catalog-product__item">430</p>
-                                </li>
-                                <li class="catalog-product__row fxm">
-                                    <a href="" class="catalog-product__link">Массивная доска</a>
-                                    <p class="catalog-product__item">430</p>
-                                </li>
-                                <li class="catalog-product__row fxm">
-                                    <a href="" class="catalog-product__link">Пробковое покрытие</a>
-                                    <p class="catalog-product__item">430</p>
-                                </li>
-                                <li class="catalog-product__row fxm">
-                                    <a href="" class="catalog-product__link">Ламинат</a>
-                                    <p class="catalog-product__item">430</p>
-                                </li>
-                                <li class="catalog-product__row fxm">
-                                    <a href="" class="catalog-product__link">Паркет</a>
-                                    <p class="catalog-product__item">430</p>
-                                </li>
-                                <li class="catalog-product__row i-hidden">
-                                    <a href="" class="catalog-product__link">Паркет</a>
-                                    <p class="catalog-product__item">430</p>
-                                </li>
-                                <li class="catalog-product__row i-hidden">
-                                    <a href="" class="catalog-product__link">Паркет</a>
-                                    <p class="catalog-product__item">430</p>
-                                </li>
-                            </ul>
-                            <div class="filter-link-wrap">
-                                <a href="#" class="filter-link catalog-product__more" data-title="Еще 2">Еще 2</a>
+                        <div class="catalog-product__col bg-yellow">
+                            <div class="catalog-product__front">
+                                <img src="img/sloy_848_28886.png" alt="pryamougolnik" class="catalog-product__img">
+                                <p class="catalog-product__title">Напольные покрытия</p>
+                                <button type="button" class="catalog-product__btn">Показать</button>
+                            </div>
+                            <div class="catalog-product__back">
+                                <div class="filter-block__body">
+                                    <ul>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">1 240</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Линолеум</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">ПВХ-плитка</a>
+                                            <p class="catalog-product__item">1 540</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Инженерная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Массивная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Пробковое покрытие</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                    </ul>
+                                    <div class="filter-link-wrap">
+                                        <a href="#" class="filter-link catalog-product__more" data-title="Еще 2">Еще 2</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                      
+                        <div class="catalog-product__col bg-pink">
+                            <div class="catalog-product__front">
+                                <img src="img/sloy_847_28888.png" alt="layout" class="catalog-product__img">
+                                <p class="catalog-product__title">Фасадные панели</p>
+                                <button type="button" class="catalog-product__btn">Показать</button>
+                            </div>
+                            <div class="catalog-product__back">
+                                <div class="filter-block__body">
+                                    <ul>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">1 240</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Линолеум</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">ПВХ-плитка</a>
+                                            <p class="catalog-product__item">1 540</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Инженерная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Массивная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Пробковое покрытие</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                    </ul>
+                                    <div class="filter-link-wrap">
+                                        <a href="#" class="filter-link catalog-product__more" data-title="Еще 2">Еще 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-product__col bg-blue">
+                            <div class="catalog-product__front">
+                                <img src="img/pryamougolnik_1522_28462.png" alt="layout" class="catalog-product__img">
+                                <p class="catalog-product__title">Керамическая плитка и керамогранит</p>
+                                <button type="button" class="catalog-product__btn">Показать</button>
+                            </div>
+                            <div class="catalog-product__back">
+                                <div class="filter-block__body">
+                                    <ul>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">1 240</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Линолеум</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">ПВХ-плитка</a>
+                                            <p class="catalog-product__item">1 540</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Инженерная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Массивная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Пробковое покрытие</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                    </ul>
+                                    <div class="filter-link-wrap">
+                                        <a href="#" class="filter-link catalog-product__more" data-title="Еще 2">Еще 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-product__col bg-yellow">
+                            <div class="catalog-product__front">
+                                <img src="img/sloy_848_28886.png" alt="pryamougolnik" class="catalog-product__img">
+                                <p class="catalog-product__title">Напольные покрытия</p>
+                                <button type="button" class="catalog-product__btn">Показать</button>
+                            </div>
+                            <div class="catalog-product__back">
+                                <div class="filter-block__body">
+                                    <ul>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">1 240</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Линолеум</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">ПВХ-плитка</a>
+                                            <p class="catalog-product__item">1 540</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Инженерная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Массивная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Пробковое покрытие</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                    </ul>
+                                    <div class="filter-link-wrap">
+                                        <a href="#" class="filter-link catalog-product__more" data-title="Еще 2">Еще 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-product__col bg-yellow">
+                            <div class="catalog-product__front">
+                                <img src="img/sloy_848_28886.png" alt="pryamougolnik" class="catalog-product__img">
+                                <p class="catalog-product__title">Напольные покрытия</p>
+                                <button type="button" class="catalog-product__btn">Показать</button>
+                            </div>
+                            <div class="catalog-product__back">
+                                <div class="filter-block__body">
+                                    <ul>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">1 240</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Линолеум</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">ПВХ-плитка</a>
+                                            <p class="catalog-product__item">1 540</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Инженерная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Массивная доска</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Пробковое покрытие</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Ламинат</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row fxm">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                        <li class="catalog-product__row i-hidden">
+                                            <a href="" class="catalog-product__link">Паркет</a>
+                                            <p class="catalog-product__item">430</p>
+                                        </li>
+                                    </ul>
+                                    <div class="filter-link-wrap">
+                                        <a href="#" class="filter-link catalog-product__more" data-title="Еще 2">Еще 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="banner-slider">
@@ -1424,13 +1661,13 @@
                         </div>
                         <div class="products-grid__promo">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-sm-6">
                                     <a href="/" class="promo">
                                         <img src="img/promo/img-promo-001.png" class="promo__img"
                                              alt="Респектабельно и солидно">
                                     </a>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-sm-6">
                                     <a href="/" class="promo mb0">
                                         <img src="img/promo/img-promo-002.png" class="promo__img"
                                              alt="Респектабельно и солидно">
