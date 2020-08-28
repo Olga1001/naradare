@@ -77,7 +77,7 @@
                     <div class="d-flex align-items-center mr-auto">
                         <a href="#" class="catalog-menu toggle-menu mr-4">
                             <div class="burger">
-                                <div class="burger__icon"></div>
+                                <div class="burger__icon"><div class="burger__icon_center"></div></div>
                             </div>
                         </a> <!-- /header menu-catalog -->
     
@@ -332,7 +332,7 @@
 <!-- HEADER EOF   -->
 
     <!-- BEGIN MAIN -->
-    <main class="main">
+    <main class="main main-card">
         <div class="container">
             <ul class="bread-crambs">
                 <li class="bread-crambs__item bc-all visible-sm">
@@ -534,7 +534,7 @@
                                                 </svg>
                                             </a>
 
-                                            <a href="#tabs_2" class="btn btn--default go-map">
+                                            <a href="#tabs_2" class="btn btn--default go-map hidden-xs">
                                                 <span class="icon icon-location-pin"></span>
                                             </a>
                                         </div>
@@ -594,35 +594,6 @@
                                         <div class="informer-dropdown informer-dropdown_service informer-dropdown--center">
                                             <div class="informer-dropdown__title">
                                                 Разгрузка и подъем
-                                                <div class="informer-dropdown__close">
-                                                    <svg height="14" width="14" fill="#7c7d7d"
-                                                         viewBox="0 0 329.26933 329">
-                                                        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"></path>
-                                                    </svg>
-
-                                                </div>
-                                            </div>
-                                            <div class="informer-dropdown__body">
-                                                <p>Заказ до 40 000 <span class="rub">a</span> – 1 400 <span
-                                                        class="rub">a</span> + 30 <span class="rub">a</span>/км за
-                                                    МКАД. <br>
-                                                    Заказ от 40 000 a – бесплатно.<br>
-                                                    Заказ менее 10 000 <span class="rub">a</span> – 1 800 <span
-                                                            class="rub">a</span> + 30 <span class="rub">a</span>/км
-                                                    за МКАД.<br>
-                                                    В регионы РФ – 1 800 <span class="rub">a</span> до любой
-                                                    транспортной компании.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="service-button__item">
-                                        <a href="#" class="service-button__link open-informer">
-                                            <span class="service-button__text"><span>Монтаж</span></span>
-                                        </a>
-                                        <div class="informer-dropdown informer-dropdown_service informer-dropdown--right">
-                                            <div class="informer-dropdown__title">
-                                                Монтаж
                                                 <div class="informer-dropdown__close">
                                                     <svg height="14" width="14" fill="#7c7d7d"
                                                          viewBox="0 0 329.26933 329">
@@ -2812,32 +2783,34 @@
                         <div class="card-slider">
                             <div class="card-slider-nav">
 
-                                <div class="card-slider-nav__item is-active" data-img="img/img1.jpg" data-big-img="img/img1.jpg">
+                                <div class="card-slider-nav__item" data-img="img/img1.jpg" data-big-img="img/img1.jpg" data-img-idx="6">
                                     <img src="img/img1.jpg" alt="">
                                 </div>
 
-                                <div class="card-slider-nav__item" data-img="img/img2.jpg" data-big-img="img/img2.jpg">
+                                <div class="card-slider-nav__item is-active" data-img="img/img2.jpg" data-big-img="img/img2.jpg" data-img-idx="7">
                                     <img src="img/img2.jpg" alt="">
                                 </div>
 
-                                <div class="card-slider-nav__item" data-img="img/img3.jpg" data-big-img="img/img3.jpg">
+                                <div class="card-slider-nav__item" data-img="img/img3.jpg" data-big-img="img/img3.jpg" data-img-idx="8">
                                     <img src="img/img3.jpg" alt="">
                                 </div>
 
-                                <div class="card-slider-nav__item" data-img="img/img4.jpg" data-big-img="img/img4.jpg">
+                                <div class="card-slider-nav__item" data-img="img/img4.jpg" data-big-img="img/img4.jpg" data-img-idx="9">
                                     <img src="img/img4.jpg" alt="">
                                 </div>
 
-                                <div class="card-slider-nav__item" data-img="img/img6.jpg" data-big-img="img/img6.jpg">
+                                <div class="card-slider-nav__item" data-img="img/img6.jpg" data-big-img="img/img6.jpg" data-img-idx="10">
                                     <img src="img/img6.jpg" alt="">
                                 </div>
 
                             </div>
                             <div class="card-slider-for__wripper">
-                                <div class="card-slider-for hide">
-                                    <img class="open-popup" src="img/img26.jpg" data-large="img/img26.jpg" alt="" data-popup="gallery">
+
+                                <div class="card-slider-for">
+                                    <img src="img/img2.jpg" data-large="img/img2.jpg" alt="" style="visibility: visible;">
                                 </div>
-                                <div class="card-slider__footer hidden-sm">
+
+                                <div class="card-slider__footer">
                                     <a href="#" class="cs-logo"><img src="img/Naradare_mini.svg" alt=""></a>
                                     <a href="#" class="cs-articul">Код товара: <strong>A8745</strong></a>
                                 </div>
@@ -2857,7 +2830,7 @@
                                         <span class="star"><span class="icon-pointed-star"></span></span>
                                         <span class="star-count">9</span>
                                     </div>
-                                    <a class="text-small" href="#" class="link">Нашли дешевле?</a>
+                                    <a class="text-small" href="#">Нашли дешевле?</a>
                                 </div>
                                 <div class="card-info">
                                     <div class="card-r-wrap card-r-wrap_sb">
@@ -2866,8 +2839,8 @@
                                             <div class="card-info__price">1 255 <span class="rub">a</span>/м<sup>2</sup></div>
                                         </div>
                                         <div class="card-info__price-summary">
-                                            <svg viewBox="0 0 511.414 511.414" >
-                                                <path d="m497.695 108.838c0-6.488-3.919-12.334-9.92-14.8l-225.988-92.838c-3.896-1.6-8.264-1.6-12.16 0l-225.988 92.838c-6.001 2.465-9.92 8.312-9.92 14.8v293.738c0 6.488 3.918 12.334 9.92 14.8l225.988 92.838c3.854 1.583 8.186 1.617 12.14-.001.193-.064-8.363 3.445 226.008-92.837 6.002-2.465 9.92-8.312 9.92-14.8zm-241.988 76.886-83.268-34.207 179.951-78.501 88.837 36.495zm-209.988-51.67 71.841 29.513v83.264c0 8.836 7.164 16 16 16s16-7.164 16-16v-70.118l90.147 37.033v257.797l-193.988-79.692zm209.988-100.757 55.466 22.786-179.951 78.501-61.035-25.074zm16 180.449 193.988-79.692v257.797l-193.988 79.692z" />
+                                            <svg viewBox="0 0 511.414 511.414">
+                                                <path d="m497.695 108.838c0-6.488-3.919-12.334-9.92-14.8l-225.988-92.838c-3.896-1.6-8.264-1.6-12.16 0l-225.988 92.838c-6.001 2.465-9.92 8.312-9.92 14.8v293.738c0 6.488 3.918 12.334 9.92 14.8l225.988 92.838c3.854 1.583 8.186 1.617 12.14-.001.193-.064-8.363 3.445 226.008-92.837 6.002-2.465 9.92-8.312 9.92-14.8zm-241.988 76.886-83.268-34.207 179.951-78.501 88.837 36.495zm-209.988-51.67 71.841 29.513v83.264c0 8.836 7.164 16 16 16s16-7.164 16-16v-70.118l90.147 37.033v257.797l-193.988-79.692zm209.988-100.757 55.466 22.786-179.951 78.501-61.035-25.074zm16 180.449 193.988-79.692v257.797l-193.988 79.692z"></path>
                                             </svg>
                                             <p class="card-info__text">6 086 <span class="rub">a</span>/упак.</p>
                                             <p class="card-info__text">4,85 м<sup>2</sup> в упаковке.</p>
@@ -2902,8 +2875,8 @@
                                             <div class="counter">
                                                 <button type="button" class="counter__btn counter__btn--minus"></button>
                                                 <div class="counter__input">
-                                                    <input id="prodCountF" type="text" class="counter__input_input" name="" value="8.658">
-                                                    <div class="counter__input_buffer"></div>
+                                                    <input id="prodCountF" type="text" class="counter__input_input" name="" value="8.658" style="width: 52px;">
+                                                    <div class="counter__input_buffer">8.658</div>
                                                     <label for="prodCountF">М<sup>2</sup></label>
                                                 </div>
                                                 <button type="button" class="counter__btn counter__btn--plus"></button>
@@ -2915,15 +2888,14 @@
                                             </a>
 
                                             <a href="#" class="btn btn--default">
-                                                <svg viewBox="-241.4 477.2 305.5 459.1" fill="#222222" width="14"
-                                                     height="22">
+                                                <svg viewBox="-241.4 477.2 305.5 459.1" fill="#222222" width="14" height="22">
                                                     <g>
-                                                        <path d="M13.1,936.2h51v-459h-51V936.2z M-62.9,936.3v-306h-51v306H-62.9z M-190.4,936.2V753.7h-51v182.6h51V936.2z"/>
+                                                        <path d="M13.1,936.2h51v-459h-51V936.2z M-62.9,936.3v-306h-51v306H-62.9z M-190.4,936.2V753.7h-51v182.6h51V936.2z"></path>
                                                     </g>
                                                 </svg>
                                             </a>
 
-                                            <a href="#tabs_2" class="btn btn--default go-map">
+                                            <a href="#tabs_2" class="btn btn--default go-map hidden-xs">
                                                 <span class="icon icon-location-pin"></span>
                                             </a>
                                         </div>
@@ -2945,7 +2917,28 @@
 
                                 <div class="characteristic-wrap">
                                     <h5 class="mb5">Основные характеристики:</h5>
-                                    <p class="characteristic-item">1200x650x8 мм / 33 класс / Фаска 4V / Влагостойкий /  Одна полоса</p>
+                                    <ul class="characteristic">
+                                        <li class="characteristic__item characteristic__item_small">
+                                            <span class="characteristic__title"><span class="ch-block">Класс</span></span>
+                                            <span class="characteristic__descr"><span class="ch-block">33</span></span>
+                                        </li>
+                                        <li class="characteristic__item characteristic__item_small">
+                                            <span class="characteristic__title"><span class="ch-block">Бренд</span></span>
+                                            <span class="characteristic__descr"><span class="ch-block"><a href="#">Tarkett</a></span></span>
+                                        </li>
+                                        <li class="characteristic__item characteristic__item_small">
+                                            <span class="characteristic__title"><span class="ch-block">Количество полос</span></span>
+                                            <span class="characteristic__descr"><span class="ch-block">Одна</span></span>
+                                        </li>
+                                        <li class="characteristic__item characteristic__item_small">
+                                            <span class="characteristic__title"><span class="ch-block">Длина</span></span>
+                                            <span class="characteristic__descr"><span class="ch-block">1200 мм</span></span>
+                                        </li>
+                                        <li class="characteristic__item characteristic__item_small">
+                                            <span class="characteristic__title"><span class="ch-block">Класс</span></span>
+                                            <span class="characteristic__descr"><span class="ch-block">33</span></span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
