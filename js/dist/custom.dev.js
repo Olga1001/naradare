@@ -380,6 +380,7 @@ $(function () {
     $('.filter-link').on('click', function () {
       namebl = $(this).html();
       dataNameBl = $(this).data('title');
+      console.log(dataNameBl);
 
       if (namebl == dataNameBl) {
         $(this).addClass('is-active').html('Cвернуть');

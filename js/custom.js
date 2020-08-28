@@ -408,8 +408,10 @@ $(function () {
 
     function openAllNavFilter() {
         $('.filter-link').on('click', function () {
+            
             namebl = $(this).html();
             dataNameBl = $(this).data('title');
+            console.log(dataNameBl);
             if (namebl == dataNameBl) {
                 $(this).addClass('is-active').html('Cвернуть');
                 $(this).parents('.filter-block__body').find('.i-hidden').removeClass('i-hidden').addClass('i-visible')
