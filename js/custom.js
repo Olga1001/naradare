@@ -3,7 +3,30 @@ $(window).on('load', function () {
 });
 
 $(function () {  
-
+    $("#file-download").on("change", function (evt) {
+        let files = evt.target.files; // FileList object
+        document.getElementsByClassName('uploaded-row').innerHTML = "";
+        for (let i = 0, f; f = files[i]; i++) {
+            // Only process image files.
+            if (!f.type.match('image.*')) {
+                alert("Только изображения....");
+            }
+            let reader = new FileReader();
+            // Closure to capture the file information.
+            reader.onload = (function(theFile) {
+                return function(e) {
+                    // Render thumbnail.
+                    let label = document.createElement('label');
+                    label.innerHTML = ['<img class="your-files_img" src="', e.target.result,
+                        '" title="', escape(theFile.name), '"/>'].join('');
+                    document.getElementById('uploaded-row').insertBefore(label, null);
+                };
+            })(f);
+            // Read in the image file as a data URL.
+            reader.readAsDataURL(f);
+        }
+        return false;
+    });
     $('.catalog-product__col').on('click', function (e) {
         e.preventDefault();
         let _this = $(this);

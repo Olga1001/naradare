@@ -381,6 +381,22 @@ sup {
     font-size: 1.2rem;
 }
 
+.list-errors {
+    padding-left: 0.5rem;
+}
+.list-errors li {
+    list-style-type: disc;
+    color: #f01818;
+    margin-left: 2rem;
+}
+.list-errors a{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #f01818;
+
+}
+
 /* 4. HEADER */
 /* ================================================ */
 .header {
@@ -3814,7 +3830,8 @@ sup {
 .card-slider-nav__item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .card-slider-nav__item_more {
@@ -10479,6 +10496,9 @@ html.overflow-hidden body {
 .mr0 {
     margin-right: 0;
 }
+.mr15 {
+    margin-right: 1.5rem;
+}
 
 
 .pl0 {
@@ -10496,7 +10516,29 @@ html.overflow-hidden body {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+#file-download {
+    display: none;
+}
+.btn-download {
+    width: 60px;
+    height: 60px;
+}
+.your-files_img {
+    width: 60px;
+    height: 60px;
+    background-color: #cccccc;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 0 10px 10px 0;
+}
 
+#uploaded-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
 /* 8. MEDIA */
 /* ================================================ */
 @media screen and (max-width: 1469px) {
@@ -12663,6 +12705,13 @@ html {
     color: #222222;
     margin: 0;
 }
+.popup-review-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #222222;
+    margin-bottom: 30px;
+}
 .popup-head {
     padding: 4px 0 4px 12px;
     background-color: #f5f7fa;
@@ -12744,6 +12793,29 @@ html {
 .popup-container_v5 .popup-body{
     padding: 30px 20px;
 
+}
+.popup-container_video {
+    padding: 0;
+    max-width: 889px;
+    background: none;
+}
+.popup-add-review .popup-container{
+    background-color: #f5f7fa;
+    max-width: 460px;
+    padding: 20px;
+}
+
+.popup-review-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222222;
+    margin-bottom: 0;
+}
+.popup-review-text span {
+    font-size: 14px;
+    color: #f01818;
 }
 
 .popup-container_v3 .btn{
