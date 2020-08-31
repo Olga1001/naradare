@@ -1971,7 +1971,7 @@
 
     <!-- BEGIN FOOTER -->
 
-    <div class="popup-wrapper">
+    <div class="popup-wrapper active">
         <div class="popup-bg"></div>
         <div class="popup-content popup-card" data-popup="card-view">
             <div class="popup-container">
@@ -3465,6 +3465,54 @@
                 </div>
             </div>
         </div>
+        <div class="popup-content popup-sign-in-up active" data-popup="sign-in-up">
+            <form class="popup-container popup-container_v3">
+                <div class="popup-head">
+                    <p class="popup-title">Вход/Регистрация</p>
+                    <a href="#" class="popup-close popup-head_close">
+                        <span class="icon-close"></span>
+                    </a>
+                </div>
+                <div class="popup-body">
+                    <div class="form-field">
+                        <input type="text" class="form-input " placeholder="Телефон">
+                    </div>
+                    <p class="popup-text">Или</p> 
+                    <div class="form-field">
+                        <input type="email" class="form-input" placeholder="E-mail">
+                    </div>
+                    <input type="submit" value="Получить код" class="btn w-100 btn--success">
+                    <div class="socials">
+                        <p class="socials-text">Вход через соцсети</p>
+                        <div class="flex-wrap d-flex">
+                            <a href="#" class="social">
+                                <img src="img/svg/vk.svg" alt="vk" class="social-img">
+                            </a>    
+                            <a href="#" class="social">
+                                <img src="img/svg/facebook.svg" alt="facebook" class="social-img">
+                            </a> 
+                            <a href="#" class="social">
+                                <img src="img/svg/instagram.svg" alt="instagram" class="social-img">
+                            </a> 
+                            <a href="#" class="social">
+                                <img src="img/svg/odnoklassniki.svg" alt="odnoklassniki" class="social-img">
+                            </a> 
+                            <a href="#" class="social">
+                                <img src="img/svg/twitter.svg" alt="twitter" class="social-img">
+                            </a> 
+
+                        </div>
+                    </div>
+                    <label class="checkbox align-items-center">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__figure"></span>
+                        <span class="checkbox__text">Согласен с условиями публичной оферты</span>
+
+                    </label>
+                </div>
+            </form>
+          
+        </div>
     </div>
     <!-- FOOTER EOF   -->
 
@@ -3520,6 +3568,7 @@
     </div>
 </footer>
 <!-- FOOTER EOF   -->
+
 
 </div>
 <!-- BODY EOF   -->

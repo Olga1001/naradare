@@ -602,12 +602,10 @@ $(function () {
 
     /* Slick */
 
-    // if (window.matchMedia("(max-width: 1259px)").matches) {
-    //     $(".catalog-product").unslick();
-    // }
-    if (window.matchMedia("(max-width: 992px)").matches) {
-        $(".slider-into-card").unslick();
+    if (window.matchMedia("(max-width: 1259px)").matches) {
+        $(".catalog-product").unslick();
     }
+  
     if ($('.slider').length) {
         $('.slider').slick({
             slidesToShow: 6,
@@ -754,7 +752,9 @@ $(function () {
         });
     }
 
-
+    if (window.matchMedia("(max-width: 992px)").matches) {
+        $('.slider.unslick-mob').slick('unslick');
+    }
     /* Range */
     if ($("#range").length > 0) {
         $("#range").slider({
@@ -826,29 +826,62 @@ $(function () {
         headerTopOffset = 0;
     });
 
-    if (!!$('.card-slider-nav__item').length) {
-        $('.card-slider').on('mouseover', function(evt) {
-            let self = $(this);
-            let tgt = $(evt.target);
-            if (tgt.hasClass('card-slider-nav__item')) {
-                if (!tgt.hasClass('is-active')) {
-                    $('.card-slider-nav__item').removeClass('is-active');
-                    tgt.addClass('is-active');
-
-                    // $('.gallery').attr('data-active', tgt.data('img-idx'));
-
-                    setNewImg(tgt.data('img-idx'));
-
-                    let srcImg = tgt.data('img');
-                    let srcBigImg = tgt.data('big-img') || tgt.data('img');
-
-                    let bigImg = self.find('.card-slider-for img');
-
-                    bigImg.attr('src', srcImg);
-                    bigImg.attr('data-large', srcBigImg);
+    if (window.matchMedia("(max-width: 575px)").matches) {
+        $('.card-slider-for__wripper').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            fade: true,
+            centerMode: true,
+            infinite: true,
+            asNavFor: '.card-slider-nav'
+          });
+          $('.card-slider-nav').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            asNavFor: '.card-slider-for__wripper',
+            dots: false,
+            arrows: false,
+            focusOnSelect: true,
+            variableWidth: true,
+            centerMode: true,
+            // centerPadding: '0px'
+          });
+    }
+    
+    if (window.matchMedia("(max-width: 575px)").matches) {
+        $(".card-slider-nav__item, .card-slider-for img").removeClass('open-popup is-active i-hidden');
+        $(".card-slider-nav__item_more").closest(".slick-slide").remove();
+        
+    }
+ 
+    if (window.matchMedia("(min-width: 576px)").matches) { 
+        if (!!$('.card-slider-nav__item').length) {
+            $('.card-slider').on('mouseover', function(evt) {
+                let self = $(this);
+                let tgt = $(evt.target);
+                if (tgt.hasClass('card-slider-nav__item')) {
+                    if (!tgt.hasClass('is-active')) {
+                        $('.card-slider-nav__item').removeClass('is-active');
+                        tgt.addClass('is-active');
+    
+                        // $('.gallery').attr('data-active', tgt.data('img-idx'));
+    
+                        setNewImg(tgt.data('img-idx'));
+    
+                        let srcImg = tgt.data('img');
+                        let srcBigImg = tgt.data('big-img') || tgt.data('img');
+    
+                        let bigImg = self.find('.card-slider-for img');
+    
+                        bigImg.attr('src', srcImg);
+                        bigImg.attr('data-large', srcBigImg);
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 
     if ((typeof $.fn.imagezoomsl !== 'undefined') && ($(window).width() > 767)) {
@@ -964,6 +997,7 @@ $(function () {
 
     /* Popup */
     /* ---------------------------------------------- */
+    
     $(document).on('click', '.open-popup', function (e) {
         e.preventDefault();
         let curentPopup = $(this).data('popup');

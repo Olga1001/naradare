@@ -1456,7 +1456,14 @@ sup {
     }
 
 }
+@media screen and (min-width: 992px) {
+    .ml-lg-10 {
+        margin-left: 10px;
+    }
+    .pl-lg-0 {
+        padding-left: 0;
 
+    }}
 @media screen and (max-width: 991px) {
     .header .logo {
         width: 10rem;
@@ -3771,7 +3778,11 @@ sup {
     text-align: center;
     flex: 0 0 7rem;
 }
-
+.card-slider-nav .slick-slide {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 0.5rem 0 0;
+}
 .card-slider-nav__item {
     width: 7rem;
     height: 7rem;
@@ -3820,6 +3831,7 @@ sup {
     flex-grow: 1;
     margin: 0 5rem;
     width: 50rem;
+    max-width: 50rem;
 }
 
 .card-slider-for {
@@ -3841,6 +3853,12 @@ sup {
     left: 0;
     margin: auto;
     position: absolute;
+}
+.card-slider-for__item {
+    display: none;
+}
+.card-slider-for__item:first-child {
+    display: block;
 }
 
 .popup-content .card-slider-for img {
@@ -3968,6 +3986,9 @@ sup {
 .card-v2 .card-left {
     width: calc(100% - 37rem);
 }
+.card-left {
+   width: min-content;
+}
 
 .card-v2 .card-slider-for__wripper {
     flex-grow: 0;
@@ -4063,6 +4084,7 @@ sup {
         overflow-x: auto;
     }
 
+  
     .card-slider-nav__item {
         width: 5rem;
         height: 5rem;
@@ -10204,7 +10226,7 @@ html.overflow-hidden body {
     }
 }
 
-.popup-card-slider-nav .slick-current .popup-card-slider-nav__item:after {
+.popup-card-slider-nav .slick-slide .popup-card-slider-nav__item:after {
     border: 0.3rem solid #48cd92;
 }
 
@@ -10458,6 +10480,13 @@ html.overflow-hidden body {
     margin-right: 0;
 }
 
+
+.pl0 {
+    padding-left: 0;
+}
+.py10 {
+    padding: 10px 0;
+}
 .row.gutters-40 {
     margin-left: -2rem;
     margin-right: -2rem;
@@ -11994,6 +12023,7 @@ html {
 .catalog-item.list .product-inner {
     flex-direction: row;
     padding: 1.5rem 0;
+    border: none;
 }
 .catalog-item.list .product-inner__img {
     width: 23rem;
@@ -12589,6 +12619,162 @@ html {
     opacity: 1;
 }
 
+
+
+  .popup-container_v2 {
+    max-width: 500px;
+    border: 1px solid #e6ecf2;
+    padding: 0;
+
+  }
+  .popup-container_v3 {
+    max-width: 400px;
+    border: 1px solid #e6ecf2;
+    padding: 0;
+
+  }
+  .popup-container_v4 {
+    max-width: 320px;
+    border: 1px solid #e6ecf2;
+    padding: 0;
+
+  }
+  .popup-container_v5 {
+    max-width: 1090px;
+    border: 1px solid #e6ecf2;
+    padding: 0;
+
+  }
+  .w-100 {
+      width: 100%;
+  }
+  .popup-text {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #222222;
+    margin: 0;
+    padding: 0.5rem 0 2rem;
+  }
+.popup-title {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222222;
+    margin: 0;
+}
+.popup-head {
+    padding: 4px 0 4px 12px;
+    background-color: #f5f7fa;
+    border-bottom: 1px solid #e6ecf2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.popup-availability-products .mb5 {
+    line-height: 1.2;
+}
+.popup-availability-overflow {
+    max-height: 400px;
+    overflow-y: auto;
+}
+.popup-availability-img {
+    margin-right: 19px;
+    width: 70px;
+    height: 70px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+.delete {
+    width: 16px;
+    height: 16px;
+    background-color: #bebebe;
+    border-radius: 2px;
+    border: none;
+    padding: 0;
+    margin-left: 6px;
+    flex-shrink: 0;
+}
+.delete .icon-close {
+    color: #ffffff;
+    font-size: 10px;
+    
+
+}
+.popup-head_close {
+    text-decoration: none;
+    background: none;
+}
+.popup-head_close:hover {
+    background: none;
+}
+.popup-head_close .icon-close {
+    color: #616161;
+    font-size: 12px;
+}
+.popup-body .error-text {
+    margin: -1.5rem 0 0 0;
+}
+.popup-text_small {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.popup-body {
+    padding: 15px 20px;
+}
+
+.popup-container_v3 .popup-body{
+    padding: 30px 20px;
+
+}
+.popup-container_v4 .popup-body{
+    padding: 30px;
+
+}
+.popup-container_v5 .popup-body{
+    padding: 30px 20px;
+
+}
+
+.popup-container_v3 .btn{
+    margin-top: 1rem;
+}
+.popup-add-basket .btn{
+    margin-left: 6px;
+}
+.socials {
+    padding-top: 40px;
+}
+
+.social {
+    margin-right: 12px;
+    margin-bottom: 24px;
+}
+.b-none {
+    border: none;
+}
+
+.social-img {
+    width: 32px;
+    height: 32px;
+}
+
+.bb-gray {
+    border-bottom: 1px solid #e6ecf2;
+}
+.popup-availability-products {
+
+}
 /* *** Галерея ****/
 .gallery {
     height: 100%;
@@ -12612,7 +12798,9 @@ html {
     display: -ms-flexbox;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     flex-direction: column;
     flex-shrink: 0;
 }
@@ -12646,7 +12834,8 @@ html {
 .popup-gallery__preview-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .gallery__view {
@@ -12910,6 +13099,9 @@ html {
     .header__hint {
         flex-grow: 1;
         margin: 0 3rem;
+    }
+    .popup-container_v5 {
+        max-width: 700px;
     }
 }
 
@@ -13203,6 +13395,10 @@ html {
   
   .fs-21 {
     font-size: 21px;
+  }
+  .fs-18 {
+      font-size: 18px;
+      line-height: 1.2;
   }
   
   .rubricator {
@@ -13565,6 +13761,19 @@ html {
         width: calc((100% - 3 * 1rem) / 3);
     }
 }
+.slick-slide .card-slider-nav__item:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 0.3rem solid transparent;
+    transition: all .35s ease-in-out;
+}
+.slick-slide.slick-current.slick-active .card-slider-nav__item:before {
+    border-color: #48cd92;
+}
 @media screen and (max-width: 575px){
     .product-inner__body__info {
         font-size: 11px;
@@ -13624,6 +13833,13 @@ html {
         margin: 0;
         width: 50%;
     }
+    .card-slider-nav__item_more{
+        display: none!important;
+    }
+    .card-slider-for__item {
+        display: block;
+    }
+
 }
 
 .catalog-item.list{
