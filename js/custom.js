@@ -626,7 +626,7 @@ $(function () {
     /* Slick */
 
     if (window.matchMedia("(max-width: 1259px)").matches) {
-        $(".catalog-product").unslick();
+        $('.catalog-product').slick('unslick');
     }
   
     if ($('.slider').length) {

@@ -13,7 +13,6 @@
 <body class="loaded">
 
 <!-- BEGIN BODY -->
-
 <div class="main-wrapper">
 
     <div class="top-banner">
@@ -339,177 +338,140 @@
                 <li class="bread-crambs__item">
                     <a href="#" class="bread-crambs__link">Главная</a>
                 </li>
-                <li class="bread-crambs__item">Корзина</li>
+                <li class="bread-crambs__item">Сравнение</li>
             </ul>
         </div>
         <div class="b-box b-box--sm b-box__bd0">
             <div class="container">
-                <h1 class="main-title">Корзина</h1>
+                <h1 class="main-title">Сравнение</h1>
             </div>
         </div>
-
         <div class="container">
-            <div class="step-list">
-                <div class="step-list__item is-selected"><span>Шаг 1: Оформление заказа</span></div>
-                <div class="step-list__item"><span>Шаг 2: Выбор способа доставки и оплаты</span></div>
-            </div>
+            <ul class="compare-tabs">
+                <li class="compare-tab active">Ламинат (5)</li>
+                <li class="compare-tab">Паркет (2)</li>
+            </ul>
+                   
         </div>
-
+        <div class="container">
+           <div class="d-flex">
+               <button class="btn--default mr30" type="button">Очистить все</button>
+               <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__figure"></span>
+                    <span class="checkbox__text">Только отличия</span>
+                </label>
+           </div>  
+        </div>
         <div class="b-box b-box__bd0">
-            <div class="container">
-                <div class="cart__wrapper">
-                    <div class="cart__left">
-                        <div class="cart">
-                            <div class="cart__tr">
-                                <div class="cart__th">Товар</div>
-                                <div class="cart__th">Цена</div>
-                                <div class="cart__th">Количество</div>
-                                <div class="cart__th">Стоимость</div>
+            <div class="container">  
+                 <div class="compare-list">
+                     <div class="compare-main">
+                        <p class="compare-title">Наименование</p>
+                        <div class="compare-img">Изображение</div>   
+                        <p class="compare-title">Стоимость</p>
+                        <p class="compare-title">Класс</p>
+                        <p class="compare-title">Производитель</p>
+                     </div>
+                     <div class="compare-slider">
+                         <div class="compare-item">
+                            <a href="#" class="compare-string compare-name">Дуб Пирей</a>
+                            <div class="compare-string-img">
+                                <img src="img/img25.jpg" alt="img" class="">
+                            </div> 
+                          
+                            <div class="compare-string product-inner__price">
+                                <span class="price"><span class="cdef">от</span>
+                                <span class="big">630</span> /м<sup>2</sup></span>
                             </div>
-                            <div class="cart__tr">
-                                <div class="cart__td">
-                                    <div class="cart-inner">
-                                        <div class="cart-inner__img"><a href="#"><img src="img/img1.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart-inner__content">
-                                            <div class="cart-inner__title"><a href="#">Дуб Пирей</a></div>
-                                            <div class="cart-inner__table">
-                                                <div class="cart-inner__tr">
-                                                    <div class="cart-inner__td">Тип:</div>
-                                                    <div class="cart-inner__td"><a href="#">Ламинат</a></div>
-                                                </div>
-                                                <div class="cart-inner__tr">
-                                                    <div class="cart-inner__td">Вес в упаковке:</div>
-                                                    <div class="cart-inner__td">13.6</div>
-                                                </div>
-                                                <div class="cart-inner__tr">
-                                                    <div class="cart-inner__td">Объем в упаковке, м3:</div>
-                                                    <div class="cart-inner__td">0,01432</div>
-                                                </div>
-                                                <div class="cart-inner__tr">
-                                                    <div class="cart-inner__td">Код товара:</div>
-                                                    <div class="cart-inner__td">A5879</div>
-                                                </div>
-                                            </div>
-                                            <div class="cart__footer">
-                                                <a href="#">Удалить</a>
-                                                <a href="#">Отложить</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cart__td w1" data-table-title="Цена">
-                                    <div class="cart__br">
-                                        <div class="cart__price">1 050 <span class="rub">a</span>/м<sup>2</sup></div>
-                                    </div>
-                                </div>
-                                <div class="cart__td w1" data-table-title="Количество">
-                                    <div class="cart__br">
-                                        <div class="counter">
-                                            <button type="button" class="counter__btn counter__btn--minus"></button>
-                                            <div class="counter__input">
-                                                <input id="prodCount" type="text" class="counter__input_input" name=""
-                                                       value="8.658">
-                                                <div class="counter__input_buffer"></div>
-                                                <label for="prodCount">М<sup>2</sup></label>
-                                            </div>
-                                            <button type="button" class="counter__btn counter__btn--plus"></button>
-                                        </div>
-                                        <span class="cart__pack">= 4 упак.</span>
-                                    </div>
-                                </div>
-                                <div class="cart__td w1" data-table-title="Стоимость">
-                                    <div class="cart__br">
-                                        <div class="cart__summ">9 090 <span class="rub">a</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart__tr">
-                                <div class="cart__td">
-                                    <div class="cart-inner">
-                                        <div class="cart-inner__img"><a href="#"><img src="img/img1.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart-inner__content">
-                                            <div class="cart-inner__title"><a href="#">Дуб Пирей</a></div>
-                                            <div class="cart-inner__table">
-                                                <div class="cart-inner__tr">
-                                                    <div class="cart-inner__td">Тип:</div>
-                                                    <div class="cart-inner__td"><a href="#">Ламинат</a></div>
-                                                </div>
-                                                <div class="cart-inner__tr">
-                                                    <div class="cart-inner__td">Вес в упаковке:</div>
-                                                    <div class="cart-inner__td">13.6</div>
-                                                </div>
-                                                <div class="cart-inner__tr">
-                                                    <div class="cart-inner__td">Объем в упаковке, м3:</div>
-                                                    <div class="cart-inner__td">0,01432</div>
-                                                </div>
-                                                <div class="cart-inner__tr">
-                                                    <div class="cart-inner__td">Код товара:</div>
-                                                    <div class="cart-inner__td">A5879</div>
-                                                </div>
-                                            </div>
-                                            <div class="cart__footer">
-                                                <a href="#">Удалить</a>
-                                                <a href="#">Отложить</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cart__td w1" data-table-title="Цена">
-                                    <div class="cart__br">
-                                        <div class="cart__price">1 050 <span class="rub">a</span>/м<sup>2</sup></div>
-                                    </div>
-                                </div>
-                                <div class="cart__td w1" data-table-title="Количество">
-                                    <div class="cart__br">
-                                        <div class="counter">
-                                            <button type="button" class="counter__btn counter__btn--minus"></button>
-                                            <div class="counter__input">
-                                                <input id="prodCountF" type="text" class="counter__input_input" name=""
-                                                       value="8.658">
-                                                <div class="counter__input_buffer"></div>
-                                                <label for="prodCountF">М<sup>2</sup></label>
-                                            </div>
-                                            <button type="button" class="counter__btn counter__btn--plus"></button>
-                                        </div>
-                                        <span class="cart__pack">= 4 упак.</span>
-                                    </div>
-                                </div>
-                                <div class="cart__td w1" data-table-title="Стоимость">
-                                    <div class="cart__br">
-                                        <div class="cart__summ">9 090 <span class="rub">a</span></div>
-                                    </div>
-
-                                </div>
-                            </div>
+                           
+                            <p class="compare-string compare-title">33 класс</p>
+                            <a href="#" class="compare-string compare-manufacturer">Tarkett</a>
+                            <button class="btn-compare-delete">Удалить</button>
+                            <button class="btn-in-basket">В корзину</button>
                         </div>
-                    </div>
-                    <div class="cart__right">
-                        <div class="cart-summary">
-                            <div class="cart-summary__total">
-                                <p class="b-total size-xl mb20">Итого<span class="hidden-xl"> к оплате</span>: <span
-                                        class="b-total__price">18 180 <span class="rub">a</span></span></p>
-                                <p class="mb30"><a href="#" class="btn btn--success btn--bg">Оформить заказ</a></p>
-                                <p class="size-md nowrap text-md-right mb0">кешбэк: <span class="size-xll font-600">1 250 <span
-                                        class="rub">a</span></span> <span class="ic-info-block">?</span></p>
-                            </div>
-                            <div class="cart-summary__detail">
-                                <p class="size-xl mb5">В корзине <span class="font-500">2</span> товара:</p>
-                                <div class="b-del">
-                                    <span>Вес: 58,65 кг</span>
-                                    <span>Объем: 0,281 м3</span>
-                                    <span>Длина: 1,38 м</span>
-                                </div>
-                            </div>
-                            <div class="cart-summary__footer">
-                                <p class="mb20 size-13">Если перед оформлением заказа вы хотите уточнить наличие
-                                    требуемого количества выбранных товаров, нажмите кнопку:</p>
-                                <a href="#" class="btn btn--default btn--lg ">Уточнить наличие</a>
-                            </div>
+                        <div class="compare-item">
+                           <a href="#" class="compare-string compare-name">Дуб Пирей</a>
+                           <div class="compare-string-img">
+                               <img src="img/img25.jpg" alt="img" class="">
+                           </div> 
+                         
+                           <div class="compare-string product-inner__price">
+                               <span class="price"><span class="cdef">от</span>
+                               <span class="big">630</span> /м<sup>2</sup></span>
+                           </div>
+                          
+                           <p class="compare-string compare-title">33 класс</p>
+                           <a href="#" class="compare-string compare-manufacturer">Tarkett</a>
+                           <button class="btn-compare-delete">Удалить</button>
+                           <button class="btn-in-basket">В корзину</button>
+                       </div>
+                       <div class="compare-item">
+                          <a href="#" class="compare-string compare-name">Дуб Пирей</a>
+                          <div class="compare-string-img">
+                              <img src="img/img25.jpg" alt="img" class="">
+                          </div> 
+                        
+                          <div class="compare-string product-inner__price">
+                              <span class="price"><span class="cdef">от</span>
+                              <span class="big">630</span> /м<sup>2</sup></span>
+                          </div>
+                         
+                          <p class="compare-string compare-title">33 класс</p>
+                          <a href="#" class="compare-string compare-manufacturer">Tarkett</a>
+                          <button class="btn-compare-delete">Удалить</button>
+                          <button class="btn-in-basket">В корзину</button>
+                      </div>
+                      <div class="compare-item">
+                         <a href="#" class="compare-string compare-name">Дуб Пирей</a>
+                         <div class="compare-string-img">
+                             <img src="img/img25.jpg" alt="img" class="">
+                         </div> 
+                       
+                         <div class="compare-string product-inner__price">
+                             <span class="price"><span class="cdef">от</span>
+                             <span class="big">630</span> /м<sup>2</sup></span>
+                         </div>
+                        
+                         <p class="compare-string compare-title">33 класс</p>
+                         <a href="#" class="compare-string compare-manufacturer">Tarkett</a>
+                         <button class="btn-compare-delete">Удалить</button>
+                         <button class="btn-in-basket">В корзину</button>
+                     </div>
+                     <div class="compare-item">
+                        <a href="#" class="compare-string compare-name">Дуб Пирей</a>
+                        <div class="compare-string-img">
+                            <img src="img/img25.jpg" alt="img" class="">
+                        </div> 
+                      
+                        <div class="compare-string product-inner__price">
+                            <span class="price"><span class="cdef">от</span>
+                            <span class="big">630</span> /м<sup>2</sup></span>
                         </div>
+                       
+                        <p class="compare-string compare-title">33 класс</p>
+                        <a href="#" class="compare-string compare-manufacturer">Tarkett</a>
+                        <button class="btn-compare-delete">Удалить</button>
+                        <button class="btn-in-basket">В корзину</button>
                     </div>
-                </div>
+                    <div class="compare-item">
+                       <a href="#" class="compare-string compare-name">Дуб Пирей</a>
+                       <div class="compare-string-img">
+                           <img src="img/img25.jpg" alt="img" class="">
+                       </div> 
+                     
+                       <div class="compare-string product-inner__price">
+                           <span class="price"><span class="cdef">от</span>
+                           <span class="big">630</span> /м<sup>2</sup></span>
+                       </div>
+                      
+                       <p class="compare-string compare-title">33 класс</p>
+                       <a href="#" class="compare-string compare-manufacturer">Tarkett</a>
+                       <button class="btn-compare-delete">Удалить</button>
+                       <button class="btn-in-basket">В корзину</button>
+                   </div>
+                     </div>
+                 </div>
             </div>
         </div>
     </main>
@@ -692,7 +654,6 @@
 <!-- BODY EOF   -->
 <div class="overlay"></div>
 <script src="js/jquery.2.2.4.min.js"></script>
-<script src="js/slick.min.js"></script>
 <script src="js/jquery.formstyler.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
