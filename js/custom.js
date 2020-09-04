@@ -3,6 +3,18 @@ $(window).on('load', function () {
 });
 
 $(function () {  
+    if (window.matchMedia("(min-width: 1025px)").matches) { 
+        var maxHeight = -1;
+
+        $('.navbar-menu-height').each(function() {
+          maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+        });
+     
+        $('.navbar-menu-height').each(function() {
+          $(this).height(maxHeight);
+        });
+    }
+  
     $("#file-download").on("change", function (evt) {
         let files = evt.target.files; // FileList object
         document.getElementsByClassName('uploaded-row').innerHTML = "";
@@ -203,7 +215,7 @@ $(function () {
     /* ---------------------------------------------- */
     $(".toggle-menu").on('click', function () {
         $(this).toggleClass('is-active');
-        $('.navbar').toggleClass("is-open");
+        $('.navbar').toggleClass("active");
         $('.overlay').toggleClass("is-open");
         $('.header').toggleClass("index");
 
