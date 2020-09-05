@@ -12300,6 +12300,9 @@ html {
     .catalog-list {
         margin: 0 -1.5rem;
     }
+    .products-grid .catalog-list {
+        margin: 0;
+    }
 
     .catalog-list_border {
         margin: 0;
@@ -12479,6 +12482,9 @@ html {
     }
     .products-grid .catalog-item:nth-child(3n) {
         margin: 0 0 1rem 0;
+    }
+    .products-grid .catalog-item:nth-child(3n){
+        width: calc((100% - 2 * 1rem) / 3);
     }
     .catalog-item:nth-child(4n) {
         margin: 0 2.5rem 1rem 0;
