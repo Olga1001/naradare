@@ -923,6 +923,7 @@ $(function () {
         $('.card-slider-for img').imagezoomsl({
             zoomrange: [1, 12],
             zoomstart: 3,
+            classmagnifier: "classmagnifier1",
             innerzoom: true,
             magnifierborder: "none"
         });
