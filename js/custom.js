@@ -637,9 +637,6 @@ $(function () {
 
     /* Slick */
 
-    if (window.matchMedia("(max-width: 1259px)").matches) {
-        $('.catalog-product').slick('unslick');
-    }
   
     if ($('.slider').length) {
         $('.slider').slick({
@@ -778,15 +775,6 @@ $(function () {
         });
     }
 
-    if ($('.banner-slider').length) {
-        $('.banner-slider').slick({
-            slidesToShow: 1,
-            arrows: false,
-            dots: true,
-            fade: true,
-        });
-    }
-
     if (window.matchMedia("(max-width: 992px)").matches) {
         $('.slider.unslick-mob').slick('unslick');
     }
@@ -830,8 +818,26 @@ $(function () {
                     slidesToShow: 3,
                 }
             },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: "unslick"
+            },
         ]
     });
+  
+    $('.banner-slider').slick({
+        slidesToShow: 1,
+        arrows: false,
+        dots: true,
+        fade: true,
+    });
+
     // Sticky header
     // if ($(".header").length > 0 && $(".filter-anchors").length > 0) {
     //     let headerTopOffset = $(".header").offset().top;
