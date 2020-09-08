@@ -224,6 +224,7 @@ $(function () {
     $(".navbar__close").on('click', function () {
         $(".toggle-menu").removeClass('is-active');
         $('.navbar').removeClass("is-open");
+        $('.navbar').removeClass("active");
         $('.header').removeClass("index");
         $('.overlay').removeClass("is-open");
 
@@ -232,6 +233,7 @@ $(function () {
     $(".overlay").on('click', function () {
         $(".toggle-menu").removeClass('is-active');
         $('.navbar').removeClass("is-open");
+        $('.navbar').removeClass("active");
         $('.filter').removeClass("is-open");
         $('.header').removeClass("index");
         $(this).removeClass("is-open");
