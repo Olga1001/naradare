@@ -490,11 +490,11 @@ $(function () {
             if ($(this).hasClass('sorting-grid__item--grid')) {
                 $('.products-list').hide();
                 $('.products-grid').show();
-                $(".catalog-item").removeClass("list");
+                $(".content .catalog-item").removeClass("list");
             } else {
                 $('.products-list').show();
                 $('.products-grid').hide();
-                $(".catalog-item").addClass("list");
+                $(".content .catalog-item").addClass("list");
             }
             return false;
         });
