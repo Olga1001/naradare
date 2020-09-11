@@ -3,6 +3,21 @@ $(window).on('load', function () {
 });
 
 $(function () {  
+    var lengthTags =  $(".tags").find("li").length;
+    function hideDetail() {
+        if (lengthTags > 5) {
+            $(".tags li").addClass('i-hidden');
+            $(".filter-link-wrap.i-hidden").removeClass('i-hidden');
+            for (var i = 1; i <= 5; i++) {
+                $(".tags li:nth-child(" + i + ")").removeClass('i-hidden').addClass('fxm');
+            }
+        }
+    }
+    if (window.matchMedia("(max-width: 575px)").matches) { 
+      
+        hideDetail();
+    }
+   
     if (window.matchMedia("(min-width: 1025px)").matches) { 
         var maxHeight = -1;
 

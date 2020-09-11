@@ -9157,6 +9157,11 @@ a.btn--default {
     color: #222222;
     font-weight: 400;
 }
+.font-montserrat {
+    
+    font-family: "Montserrat", sans-serif;
+
+}
 
 .btn--default:hover,
 a.btn--default:hover {
@@ -10663,9 +10668,8 @@ html.overflow-hidden body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
         margin: 0;
+        overflow-x: scroll;
 }
 
 .compare-tab {
@@ -10678,6 +10682,7 @@ html.overflow-hidden body {
     padding: 0 20px;
     margin-bottom: 25px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .compare-tab.active {
@@ -10741,7 +10746,9 @@ html.overflow-hidden body {
     font-size: 13px;
     line-height: 16px;
     font-weight: 400;
-    color: #222222;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
 }
 .compare-string .price{
@@ -13601,6 +13608,25 @@ html {
     .catalog-item.list .product-inner__body__list {
         padding-left: 14px;
     }
+    .category-main .content-button {
+        margin-left: -1.5rem!important;
+        margin-left: -1.5rem!important;
+        padding: 1rem 1.5rem;
+        border-top: 0.1rem solid #e6ecf2;
+        width: calc(100% + 3rem)
+    }
+    .bottom-block {
+        border: none;
+    }
+    .bottom-block .ct-footer {
+        padding-top: 0;
+    }
+    .bottom-block .ct-footer__title {
+        display: none;
+    }
+    .bottom-block .map-block__category {
+        margin-top: 0;
+    }
 }
 
 .footer__text {
@@ -13960,7 +13986,11 @@ html {
         margin-top: 3rem;
     } 
   }
-  
+  @media screen and (max-width: 768px) {   
+    .map-block__category {
+        margin-top: 30px;
+    }
+  }
   @media screen and (max-width: 767px) {   
 
     .map-block__category {
@@ -14191,8 +14221,11 @@ html {
         margin-left: 12px;
     }
     .product-inner__body__btns .btn {
-        margin-right: 12px;
+        margin-right: auto;
         padding: 0 12px;
+    }
+    .i-like .icon {
+        font-size: 1.6rem;
     }
     .product-inner__body__list .product-inner__title span {
         font-size: 1.1rem;
@@ -14203,8 +14236,14 @@ html {
     .p-rating .star span {
         font-size: 1rem;
     }
+    .gray-block .p-rating--xl .star span {
+        font-size: 2.5rem;
+    }
     .p-rating .star:not(:last-child) {
         margin: 0 0.1rem 0 0;
+    }
+    .gray-block .p-rating .star:not(:last-child) {
+        margin: 0 0.3rem 0 0;
     }
     .catalog-item.list .product-inner__title {
         margin: 0 0 0.1rem 0;
@@ -14248,6 +14287,9 @@ html {
         margin: 0;
     }
 
+    .catalog-item.list .product-inner__img {
+        width: 42.1vw;
+    }
 }
 .map-block__category {
     width: 100%;
