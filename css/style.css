@@ -1487,10 +1487,15 @@ sup {
     }
 
 }
-@media screen and (min-width: 992px) {
+.pl-0 {
+    padding-left: 0;
+}
+@media screen and (min-width: 1025px) {
     .ml-lg-10 {
         margin-left: 10px;
     }
+}
+@media screen and (min-width: 992px) {
     .pl-lg-0 {
         padding-left: 0;
 
@@ -3889,7 +3894,7 @@ sup {
 
 .card-slider-for {
     width: 100%;
-    height: 0;
+    height: fit-content;
     padding: 100% 0 0 0;
     font-size: 0;
     overflow: hidden;
@@ -3898,7 +3903,7 @@ sup {
     border: none;
 }
 
-.card-slider-for img{
+.card-slider-for img {
     width: 100%;
     top: 0;
     right: 0;
@@ -10059,7 +10064,13 @@ html.overflow-hidden body {
     padding: 50px;
     font-size: 14px;
 }
+.popup-container .form-input {
+    padding: 0 15px;
+}
+.popup-container textarea.form-input {
+    padding: 15px;
 
+}
 .popup-wrapper.active .popup-bg {
     opacity: 1;
 }
@@ -10070,7 +10081,7 @@ html.overflow-hidden body {
     top: -100px;
     right: 0;
     bottom: -100px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     -o-transition: all 0.35s ease-out;
     transition: all 0.35s ease-out;
     -webkit-transition: all 0.35s ease-out;
@@ -10669,7 +10680,7 @@ html.overflow-hidden body {
     display: -ms-flexbox;
     display: flex;
         margin: 0;
-        overflow-x: scroll;
+        overflow-x: auto;
 }
 
 .compare-tab {
@@ -10738,25 +10749,24 @@ html.overflow-hidden body {
 }
 
 .compare-string {
-    padding: 12px 10px;
+    padding: 10px;
     background-color: #f7f7f7;
     width: 100%;
     display: block;
     margin-bottom: 0.5rem;
     font-size: 13px;
-    line-height: 16px;
     font-weight: 400;
-    white-space: nowrap;
+    height: fit-content;
+    /* white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
-
+    overflow: hidden; */
 }
+  
 .compare-string .price{
     margin: 0;
-
 }
 .compare-string.product-inner__price {
-    padding: 10px 10px 11px 10px;
+    padding: 9px 10px;
     color: #de4646;
 }
 .compare-string-img {
@@ -10819,6 +10829,7 @@ html.overflow-hidden body {
     font-size: 14px;
     font-weight: 500;
     color: #0053b9;
+    padding: 9px 10px;
 }
 .compare-manufacturer {
     color: #0053b9;
@@ -13051,7 +13062,7 @@ html {
 .popup-availability-img {
     margin-right: 19px;
     width: 70px;
-    height: 70px;
+    /* height: 70px; */
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -13064,10 +13075,19 @@ html {
     padding: 0;
     margin-left: 6px;
     flex-shrink: 0;
-}
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    }
 .delete .icon-close {
     color: #ffffff;
-    font-size: 10px;
+    font-size: 9px;
     
 
 }
@@ -13108,6 +13128,10 @@ html {
     padding: 30px 20px;
 
 }
+.popup-availability-products .popup-container_v5 .popup-body{
+    padding: 30px 30px 30px 20px;
+
+}
 .popup-container_video {
     padding: 0;
     max-width: 889px;
@@ -13118,7 +13142,12 @@ html {
     max-width: 460px;
     padding: 20px;
 }
-
+.popup-add-review .p-rating .star span{
+    font-size: 2.5rem;
+}
+.popup-add-review .p-rating .star:not(:last-child) {
+    margin: 0 0.3rem 0 0;
+}
 .popup-review-text {
     font-family: Montserrat;
     font-size: 14px;
@@ -13137,6 +13166,9 @@ html {
 }
 .popup-add-basket .btn{
     margin-left: 6px;
+    padding: 0;
+    width: 44px;
+    flex-shrink: 0;
 }
 .socials {
     padding-top: 40px;
@@ -13328,7 +13360,7 @@ html {
 /* *** Галерея ****/
 
 
-.loaded .card-slider-for img{
+.loaded .card-slider-for img {
     visibility: hidden !important;
 }
 
@@ -13767,7 +13799,7 @@ html {
     color: #222222;
     font-family: Montserrat;
     font: 400 14px/36px "Montserrat", Arial, sans-serif;
-    padding: 2px 15px;
+    padding: 2px 35px 2px 15px;
     cursor: pointer;
     position: relative;
   }
@@ -13910,6 +13942,11 @@ html {
       -webkit-line-clamp: 2;
       height: calc(1em * 1.6 * 2);
     }
+    .compare-string .line-clamp {
+        -webkit-line-clamp: 2;
+        height: auto
+
+    }
   }
   
   .header__hint_icon {
@@ -13985,6 +14022,7 @@ html {
         display: block;
         margin-top: 3rem;
     } 
+  
   }
   @media screen and (max-width: 768px) {   
     .map-block__category {
@@ -14038,6 +14076,7 @@ html {
     .card-slider-for__wripper {
         margin: 0;
         width: 100%;
+        background: none;
     }
     
   
@@ -14161,6 +14200,12 @@ html {
     }
     .ct-footer {
         padding: 2rem 4rem 1rem
+    }
+    .popup-availability-overflow {
+        padding: 0 25px;
+    }
+    .popup-availability-products .popup-container_v5 .popup-body {
+        padding: 30px 20px;
     }
 }
 @media screen and (max-width: 768px){
@@ -14290,6 +14335,25 @@ html {
     .catalog-item.list .product-inner__img {
         width: 42.1vw;
     }
+    .popup-availability-products .fs-18 {
+        font-size: 15px;
+    }
+    .popup-availability-img {
+        margin-right: 10px;
+    }
+    .popup-availability-products .popup-container_v5 .popup-body {
+        padding: 25px 10px;
+    }
+    .px-sm-1 {
+        padding: 0 4px;
+    }
+
+}
+.pl-0 {
+    padding-left: 0;
+}
+.pr-0 {
+    padding-right: 0;
 }
 .map-block__category {
     width: 100%;
