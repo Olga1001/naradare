@@ -17,18 +17,30 @@ $(function () {
       
         hideDetail();
     }
-   
+  
+    var maxHeight = -1;
     if (window.matchMedia("(min-width: 1025px)").matches) { 
-        var maxHeight = -1;
-
         $('.navbar-menu-height').each(function() {
-          maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+            maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
         });
      
         $('.navbar-menu-height').each(function() {
           $(this).height(maxHeight);
         });
     }
+
+    // let compare = $("[data-index]");
+    // for (let i = 0; i < compare.length; i++) {
+    //     let heightCompare = compare[i].height();
+    //     console.log(heightCompare);
+    // }
+    // $(".compare-string").each(function() {
+    //     maxHeight2 = maxHeight > $(this).height() ? maxHeight : $(this).height();
+    //     console.log(maxHeight2);
+    // });
+    // $('.compare-string').each(function() {
+    //     $(this).height(maxHeight2);
+    // });
   
     $("#file-download").on("change", function (evt) {
         let files = evt.target.files; // FileList object
@@ -943,7 +955,7 @@ $(function () {
     }
 
     if ((typeof $.fn.imagezoomsl !== 'undefined') && ($(window).width() > 767)) {
-        $('.card-slider-for img').imagezoomsl({
+        $('.img-zoom').imagezoomsl({
             zoomrange: [1, 12],
             zoomstart: 3,
             classmagnifier: "classmagnifier1",
