@@ -28,20 +28,22 @@ $(function () {
           $(this).height(maxHeight);
         });
     }
-
-    // let compare = $("[data-index]");
-    // for (let i = 0; i < compare.length; i++) {
-    //     let heightCompare = compare[i].height();
-    //     console.log(heightCompare);
-    // }
-    // $(".compare-string").each(function() {
-    //     maxHeight2 = maxHeight > $(this).height() ? maxHeight : $(this).height();
-    //     console.log(maxHeight2);
-    // });
-    // $('.compare-string').each(function() {
-    //     $(this).height(maxHeight2);
-    // });
   
+
+//     var highestBox = 0;
+//     $('.compare-string').each(function(){  
+//       $(".compare-main [data-index='" + i + "'");
+//         if(highestBox > $(this).height()){  
+//             highestBox = highestBox; 
+//             console.log(highestBox); 
+//         } else {
+//             highestBox = $(this).height(); 
+//             console.log(highestBox); 
+//         }
+//     });    
+
+// $('.compare-string ').height(highestBox);
+
     $("#file-download").on("change", function (evt) {
         let files = evt.target.files; // FileList object
         document.getElementsByClassName('uploaded-row').innerHTML = "";
@@ -907,17 +909,17 @@ $(function () {
             infinite: true,
             asNavFor: '.card-slider-nav'
           });
-          $('.card-slider-nav').slick({
+        $('.card-slider-nav').slick({
             slidesToShow: 5,
-            slidesToScroll: 1,
-            infinite: true,
+            slidesToScroll: 3,
+            infinite: false,
             asNavFor: '.card-slider-for__wripper',
             dots: false,
             arrows: false,
             focusOnSelect: true,
             variableWidth: true,
-            centerMode: true,
-            // centerPadding: '0px'
+            // centerMode: true,
+            // centerPadding: '30px'
           });
     }
     
