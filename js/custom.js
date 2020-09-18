@@ -3,6 +3,20 @@ $(window).on('load', function () {
 });
 
 $(function () {  
+
+    $(".popup-close").click(function(){
+        stopVideo(document);
+      });
+      
+    var stopVideo = function (element) {
+        var iframe = element.querySelector( 'iframe');
+        if ( iframe !== null ) {
+            var iframeSrc = iframe.src;
+            iframe.src = iframeSrc;
+        }
+    };
+     
+      
     var lengthTags =  $(".tags").find("li").length;
     function hideDetail() {
         if (lengthTags > 5) {
@@ -28,21 +42,6 @@ $(function () {
           $(this).height(maxHeight);
         });
     }
-  
-
-//     var highestBox = 0;
-//     $('.compare-string').each(function(){  
-//       $(".compare-main [data-index='" + i + "'");
-//         if(highestBox > $(this).height()){  
-//             highestBox = highestBox; 
-//             console.log(highestBox); 
-//         } else {
-//             highestBox = $(this).height(); 
-//             console.log(highestBox); 
-//         }
-//     });    
-
-// $('.compare-string ').height(highestBox);
 
     $("#file-download").on("change", function (evt) {
         let files = evt.target.files; // FileList object
