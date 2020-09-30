@@ -843,21 +843,17 @@ $(function () {
         dots: true,
         responsive: [
             {
-                breakpoint: 1259,
+                breakpoint: 1276,
                 settings: {
-                    slidesToShow: 3,
+                    variableWidth: true
                 }
             },
             {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 575,
+                
+                breakpoint: 576,
                 settings: "unslick"
-            },
+            }
+
         ]
     });
   
@@ -909,7 +905,7 @@ $(function () {
             asNavFor: '.card-slider-nav'
           });
         $('.card-slider-nav').slick({
-            slidesToShow: 5,
+            slidesToShow: 1,
             slidesToScroll: 3,
             infinite: false,
             asNavFor: '.card-slider-for__wripper',
